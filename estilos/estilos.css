@@ -1,0 +1,267 @@
+.carousel-item{
+    height: 80vh;
+    min-height: 250px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+nav{
+  font-size: 20px;
+  font-family: 'Paytone One', sans-serif;
+  background-color: antiquewhite;
+}
+/*menu burguer*/
+
+.menu-burger{
+  font-family: 'Paytone One', sans-serif;
+}
+body{
+  background-color: antiquewhite;
+}
+
+/*carousel Imagenes*/
+
+.carruselburger{
+  display: table;
+position: relative;
+width: 100%;
+z-index: 800;
+background-color:#000;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.fade-carousel{
+  position: relative;
+  height: 80vh;
+}
+.fade-carousel .carousel-inner .carousel-item{
+  height: 80vh;
+}
+.fade-carousel .carousel-indicators > li{
+  margin: 0 2px;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active{
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/*      Carousel Letras       */
+.fade-carousel .carousel-inner .carousel-caption{
+  top: 50%;
+  left: 65%;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+       -moz-transform: translate3d(-50%,-50%,0);
+        -ms-transform: translate3d(-50%,-50%,0);
+         -o-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+  
+}
+.fade-carousel .carousel-inner .carousel-caption h1{
+  font-size:200%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-carousel .carousel-inner .carousel-caption{
+  opacity: 0;
+  -webkit-transition: 2s all ease-in-out .1s;
+     -moz-transition: 2s all ease-in-out .1s; 
+      -ms-transition: 2s all ease-in-out .1s; 
+       -o-transition: 2s all ease-in-out .1s; 
+          transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .active .carousel-caption {
+  opacity: 1;
+  -webkit-transition: 2s all ease-in-out .1s;
+     -moz-transition: 2s all ease-in-out .1s; 
+      -ms-transition: 2s all ease-in-out .1s; 
+       -o-transition: 2s all ease-in-out .1s; 
+          transition: 2s all ease-in-out .1s;    
+}
+
+/*          Custom Buttons      */
+.btn.btn-lg {
+  padding: 10px 40px;
+  outline: none;
+  margin: 20px auto;
+}
+.btn.btn-learn,
+.btn.btn-learn:hover,
+.btn.btn-learn:focus{
+  outline: none;
+  margin: 20px auto;
+}
+
+/*btn configurado*/
+
+.btn-learn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Paytone One', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-learn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  color:#fff;
+}
+
+/*       Slides backgrounds     */
+.fade-carousel .carousel-inner .slide-1, 
+.fade-carousel .carousel-inner .slide-2,
+.fade-carousel .carousel-inner .slide-3 {
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .carousel-inner .slide-1 {
+  background-image: url(../img/banner1.jpg); 
+}
+.fade-carousel .carousel-inner .slide-2 {
+  background-image: url(../img/banner2.jpg);
+}
+.fade-carousel .carousel-inner .slide-3 {
+  background-image: url(../img/banner3.jpg);
+}
+
+/*prueba hover colores*/
+
+.efectoImg {
+  position:relative;
+  overflow:hidden;
+  float:left;
+}
+.efectoImg figure {
+  margin:0;
+  padding:0;
+  position:relative;
+  cursor:pointer;
+}
+.efectoImg h2{
+  position: absolute;
+  bottom: 20px;
+  left:20px;
+  color:#fff;
+}
+.efectoImg {
+  display:inline-block;
+  position:relative;
+}
+
+.efectoImg figure figcaption {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:20px;
+  margin:0;
+  color:#fff;
+  background-color:rgb(38,74,149);
+  height: 100%;
+}
+
+.efectoImg figure img:hover {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.efectoImg figure h4 {
+  color:#fff;
+  text-align:left
+}
+.efectoImg figure p {
+  margin:0;
+  color:#fff;
+  text-align:left;
+  font-size: .750rem !important;
+line-height: 1.5 !important;
+}
+
+/*lightbox*/
+
+#lightbox .modal-content {
+  display: inline-block;
+  text-align: center;   
+}
+
+#lightbox .close {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+  padding: 5px 10px 7px 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  position: absolute;
+  top: -15px;
+  right: -55px;
+  z-index:1032;
+}
+
+
+/*Formulario*/
+
+.btn-enviar{
+	background:rgb(38,74,149);
+	color: #fff;
+	margin: auto;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+.input-200{
+  width: 90%;
+  height: 100px;
+}
+
+
+/*efecto de aparecer de un lado */
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: initiate;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
